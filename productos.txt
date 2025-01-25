@@ -1,0 +1,6 @@
+leche,15.0
+arroz,50.0
+carro,10.0
+Coca Cola,-1.0
+agua,50.0
+procan,80.0

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surefire Report</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, h3, p, table {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Header Styling */
+        #banner {
+            background-color: #1e3d58;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        #banner hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+        }
+
+        #breadcrumbs {
+            padding: 10px 20px;
+            background-color: #f7f9fc;
+            border-bottom: 2px solid #ddd;
+            text-align: right;
+        }
+
+        #breadcrumbs span {
+            color: #555;
+        }
+
+        /* Left column for logo */
+        #leftColumn {
+            display: inline-block;
+            width: 20%;
+            padding: 20px;
+        }
+
+        #leftColumn img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Main content styling */
+        #bodyColumn {
+            display: inline-block;
+            width: 75%;
+            padding: 20px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        .bodyTable {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Success icon */
+        img.icon_success_sml {
+            width: 15px;
+            height: 15px;
+        }
+
+        /* Footer Styling */
+        #footer {
+            background-color: #1e3d58;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        #footer hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+        }
+
+        .xright {
+            text-align: right;
+        }
+
+        /* Links */
+        a {
+            color: #1e7a8a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            #leftColumn {
+                width: 100%;
+                text-align: center;
+            }
+
+            #bodyColumn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Banner -->
+    <div id="banner">
+        <h1>Surefire Test Report</h1>
+        <hr/>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <div id="breadcrumbs">
+        <span>Last Published: 2025-01-24</span> | 
+        <span>Version: 1.0-SNAPSHOT</span>
+    </div>
+
+    <!-- Main Content Area -->
+    <div id="content" style="display: flex;">
+
+        <!-- Left Column (Logo) -->
+        <div id="leftColumn">
+            <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+                <img src="./images/logos/maven-feather.png" alt="Built by Maven">
+            </a>
+        </div>
+
+        <!-- Right Column (Report) -->
+        <div id="bodyColumn">
+            <h2>Summary</h2>
+            <table class="bodyTable">
+                <thead>
+                    <tr>
+                        <th>Tests</th>
+                        <th>Errors</th>
+                        <th>Failures</th>
+                        <th>Skipped</th>
+                        <th>Success Rate</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>100%</td>
+                        <td>0.044</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Note:</strong> Failures are anticipated and checked for with assertions, while errors are unanticipated.</p>
+
+            <h3>Package List</h3>
+            <table class="bodyTable">
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        <th>Tests</th>
+                        <th>Errors</th>
+                        <th>Failures</th>
+                        <th>Skipped</th>
+                        <th>Success Rate</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#com.miempresa">com.miempresa</a></td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>100%</td>
+                        <td>0.044</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Test Cases</h3>
+            <table class="bodyTable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Class</th>
+                        <th>Tests</th>
+                        <th>Errors</th>
+                        <th>Failures</th>
+                        <th>Skipped</th>
+                        <th>Success Rate</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img class="icon_success_sml" src="images/icon_success_sml.gif" alt="Success"></td>
+                        <td><a href="#com.miempresa.ProductoTest">ProductoTest</a></td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>100%</td>
+                        <td>0.044</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>&#169; 2025 Niurka11</p>
+    </div>
+
+</body>
+</html>
